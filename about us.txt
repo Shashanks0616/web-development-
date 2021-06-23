@@ -1,0 +1,173 @@
+<!--doctype html-->
+<html>
+<head>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color:  #0099ff;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color:  #cc0099;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+ input{
+            border: rgb(192, 46, 46);
+            border-radius: 30px;
+        }
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: gray;
+}
+ img{
+        max-width: 468;
+        max-height: 465;
+        display: block; /* remove extra space below image */
+    }
+    .box{
+        width: 250px;        
+        border: 5px solid black;
+    }    
+    .box.large{
+        height: 300px;
+    }
+    .box.small{
+        height: 100px;
+    }
+</style>
+   <nav class="md:ml-auto flex flex-wrap items-center text-base justify-Right" style="float:right;font-color:gray">
+            <a class="mr-5 hover:text-gray-900">Home</a>
+            <a class="mr-5 hover:text-gray-900">Career</a>
+            <a class="mr-5 hover:text-gray-900">About us</a>
+            <a class="mr-5 hover:text-gray-900">Contact</a>
+ 	<div><input type="text"name="box" placeholder="Search">
+        </div>
+          </nav>
+         <section class="text-gray-600 body-font">
+            <div class="container px-5 py-24 mx-auto">
+              <div class="flex flex-col text-center w-full mb-20">
+                <h2 class="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1"></h2>
+                <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900"></h1>
+              </div>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Form</title>
+<!--link-stylesheet----------->
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<!--using-fontAwesome------------>
+<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+</head>
+    
+
+<div class="about-section">
+  <h1>About Us Page</h1>
+  <p>Every member of our team has both client-side and</p>
+<p>consulting experience with a combined portfolio that</p>
+<p>tops out at over 500 clients. Our backgrounds range</p>
+<p>from senior positions in strategy and planning to</p>
+<p>marketing operations. Combine that with a healthy</p>
+<p>appetite for problem solving and the need to deliver</p>
+<p>world-class results – and brilliant things happen</p>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="C:\Users\Lenovo\Pictures\ALL LECTURES SEM 2\parul1.jpeg" alt="Parul" style="width:100%" >
+      <div class="container">
+        <h2>Parul</h2>
+        <p class="title"></p>
+        <p>Student At LPU.</p>
+        <p>pbawa0408@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="C:\Users\Lenovo\Pictures\ALL LECTURES SEM 2\sashank.png" alt="Sashank" style="width:100%">
+      <div class="container">
+        <h2>Sashank </h2>
+      <p>Student At LPU.</p>
+        <p>sashankshekhar23@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+
+    </div>
+  </div>
+
+</html>

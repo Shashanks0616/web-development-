@@ -1,0 +1,256 @@
+<!--doctype html-->
+<html>
+<head>
+<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+<style> {
+    margin: 0px;
+    padding: 0px;
+    background-color: #FFFFFF;
+}
+
+a {
+    text-decoration: none;
+}
+
+.social a {
+    padding: 20px;
+    color: #7b7c7c;
+    font-size: 1.1rem;
+}
+
+#contact {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+}
+
+.social a:hover {
+    color: #000000;
+    transition: all ease 0.3s;
+}
+
+.contact-box {
+    background-color: #434445;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 30px;
+    box-shadow: 2px 0px 30px rgba(0, 0, 0, 0.1);
+}
+
+.c-heading h1 {
+    font-family: Roboto;
+    color: #e7eef3;
+    font-size: 2.5rem;
+    font-weight: lighter;
+    margin: 0px;
+    padding: 0px;
+}
+
+.c-heading p {
+    font-family: Roboto;
+    color: #cecece;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.c-inputs {
+    margin: 15px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-inputs input {
+    width: 250px;
+    height: 45px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(251, 251, 251, 0.1);
+    outline: none;
+    margin: 10px 0px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #f4f4f4;
+    display: flex;
+}
+
+.c-inputs textarea {
+    width: 250px !important;
+    height: 200px !important;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid rgba(82, 82, 82, 1);
+    color: #f4f4f4;
+    padding: 10px;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+}
+
+.c-inputs button {
+    width: 200px;
+    height: 40px;
+    background-color: #FFFFFF;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+    letter-spacing: 1px;
+}
+
+.c-inputs input:focus {
+    border-bottom: 1px solid rgba(252, 252, 252, 1.00);
+    transition: all ease 0.5s;
+}
+
+.c-inputs textarea:focus {
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 1.00);
+    transition: all ease 0.5s;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.c-inputs button:active {
+    transform: scale(1.02);
+}
+
+.map {
+    filter: grayscale(0.2);
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    border: 4px solid grey;
+}
+
+@media(max-width:1100px) {
+    .map {
+        display: none;
+    }
+}
+
+@media(max-width:450px) {
+    .social {
+        display: none;
+    }
+
+    .contact-box {
+        width: 100%;
+        height: 100vh;
+        box-sizing: border-box;
+    }
+
+    #contact {
+        position: static;
+        transform: translate(0, 0);
+        width: 100%;
+        height: 100vh;
+        box-sizing: border-box;
+    }
+
+    .c-heading h1 {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+}
+ input{
+            border: rgb(192, 46, 46);
+            border-radius: 30px;
+        }
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+nav a{
+font-color:gray
+}
+
+a:hover, a:active {
+  background-color: gray;
+}
+</style>
+     <nav class="md:ml-auto flex flex-wrap items-center text-base justify-Right" style="float:right;font-color:gray">
+            <a class="mr-5 hover:text-gray-900">Home</a>
+            <a class="mr-5 hover:text-gray-900">Career</a>
+            <a class="mr-5 hover:text-gray-900">About us</a>
+            <a class="mr-5 hover:text-gray-900">Contact</a>
+ 	<div><input type="text"name="box" placeholder="Search">
+        </div>
+          </nav>
+         <section class="text-gray-600 body-font">
+            <div class="container px-5 py-24 mx-auto">
+              <div class="flex flex-col text-center w-full mb-20">
+                <h2 class="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1"></h2>
+                <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900"></h1>
+              </div>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Form</title>
+<!--link-stylesheet----------->
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<!--using-fontAwesome------------>
+<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!--contact-form-container------------------->
+	<section id="contact">
+	<!--socail----------->
+	<div class="social">
+	<!--icons--------->
+	<a href="#"><i class="fab fa-facebook-f"></i></a>
+<a href="#"><i class="fab fa-twitter"></i></a>
+	<a href="#"><i class="fab fa-instagram"></i></a>
+	<a href="#"><i class="fab fa-dribbble"></i></a>
+	<a href="#"><i class="fab fa-behance"></i></a>
+
+	</div>
+	<!--contact-box------------->
+	<div class="contact-box" style= "width:100%;height:100%" >
+	<!--heading---------->
+	<div class="c-heading">
+	<h1>Get In Touch</h1>
+	<p>Call Or Email Us Regarding Question Or Issues</p>
+	</div>
+	<!--inputs------------------>
+	<div class="c-inputs">
+	<form>
+	<input type="text" placeholder="Full Name"/>	
+	<input type="email" placeholder="Example@gmail.com"/>
+	<textarea name="message" placeholder="Write Message"></textarea>
+	<!--sumbit-btn----------->
+	<button>SEND</button>
+	</form>
+	</div>
+
+	</div>
+	<!--map------------------->
+	<div class="map">
+
+          
+        	
+    </div>
+	</section>
+</body>
+</html>
